@@ -1,0 +1,19 @@
+name: mon premier workflow
+
+on:
+    push:
+        branches: [master]
+jobs:
+    hello-world:
+      runs-on: ubuntu-latest
+
+
+        steeps:
+          - name: dire bonjour
+          run: echo "hello,world! CI/CD avec github actions"
+
+          - name: afficher la date
+          run: date
+
+          - name: lister les fichiers
+          run: ls -la
